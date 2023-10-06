@@ -1,0 +1,44 @@
+/* Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Space Grotesk from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-poppins text-sm lg:text-base;
+}
+
+html,
+body,
+#root {
+    @apply h-full;
+}
+
+header .active,
+#sidebar .active {
+    @apply bg-yellow-ochre text-charcoal;
+}
+
+#profileLayoutSidebar .active {
+    @apply bg-charcoal text-white;
+}
+
+#sellerDashboardNavbar .active {
+    @apply bg-yellow-ochre/10;
+}
+
+#categoriesNavbar .active {
+    @apply bg-gray-100;
+}
+
+#categoriesNavbar::-webkit-scrollbar {
+    display: none;
+}
+
+.quill p {
+    @apply text-gray-700 text-sm;
+}
