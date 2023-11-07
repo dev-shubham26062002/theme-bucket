@@ -93,7 +93,7 @@ const OtherProductCard: React.FC<OtherProductCardProps> = ({
                     <p className="text-gray-400 text-sm">by {publisherName}</p>
                     <div className="mt-4 flex justify-between items-center gap-x-2">
                         <div className="flex items-center gap-x-2">
-                            <span className="text-charcoal font-semibold">{averageRating}</span>
+                            <span className="text-charcoal font-semibold">{averageRating.toFixed(1)}</span>
                             <BsStarFill className="w-5 h-5 text-yellow-ochre" />
                             <span className="text-gray-400 text-sm">({ratingsCount})</span>
                         </div>
